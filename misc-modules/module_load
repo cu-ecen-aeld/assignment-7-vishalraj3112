@@ -21,7 +21,7 @@ else
     group="wheel"
 fi
 
-echo "Load our module, exit on failure"
+echo "Load our module, exit on failure--Testfor update"
 modprobe $module.ko $* || exit 1
 
 echo "Get the major number (allocated with allocate_chrdev_region) from /proc/devices"

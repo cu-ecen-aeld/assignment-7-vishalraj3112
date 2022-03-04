@@ -14,6 +14,7 @@ fi
 # invoke insmod with all arguments we got
 # and use a pathname, as insmod doesn't look in . by default
 #insmod ./$module.ko $* || exit 1
+echo "Putting test string to check update"
 modprobe $module.ko $* || exit 1
 
 # retrieve major number
